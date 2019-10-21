@@ -3,7 +3,12 @@ function convert()
 //The input to be converted to the message is provided here
 
 var input = "Vrphwklqj phdqlqjixo";
-/* The convertion logic is based on Ceaser-Cipher method. We retrieve the ASCII values of the characters one be one from the string. As per formulae; m = c + d mod 26. However we are using ASCII values, we have to replace mod 26 by - 26. The decryption key from the pattern is 23. Hence m = c + 23-26 => m = c - 23. However for the ASCII values; a-c; the formulae returns non-alphabetic ASCII values. As an exception to these three alphabets; m = c + 23; The ASCII value thus attained are to be converted back to characters */
+/* The convertion logic is based on Ceaser-Cipher method. We retrieve the ASCII values of
+the characters one be one from the string. As per formulae; m = c + d mod 26. However we 
+are using ASCII values, we have to replace mod 26 by - 26. The decryption key from the
+pattern is 23. Hence m = c + 23-26 => m = c - 23. However for the ASCII values;
+a-c; the formulae returns non-alphabetic ASCII values. As an exception to these three alphabets; m = c + 23;
+The ASCII value thus attained are to be converted back to characters */
 
 for(var i=0; i<input.length; i++)
     {
